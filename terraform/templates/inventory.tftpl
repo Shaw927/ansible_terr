@@ -1,0 +1,13 @@
+all:
+  children:
+%{ for name, ip in instances ~}
+    ${name}:
+      hosts:
+        ${name}:
+          ansible_host: ${ip}
+          ansible_user: ubuntu
+%{ endfor ~}
+    local:
+      hosts:
+        localhost:
+          ansible_connection: local

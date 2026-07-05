@@ -1,0 +1,3 @@
+---
+clickhouse_version: "24.8.4.13"
+clickhouse_arch: "amd64"

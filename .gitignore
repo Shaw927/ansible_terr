@@ -1,0 +1,38 @@
+# Локальные артефакты отладки и динамической инвентаризации
+ansible.log
+*.swp
+*.swo
+*.pyc
+ansible/prod.yml
+
+# --- Terraform ---
+# Файлы состояния (ВНИМАНИЕ: содержат открытые пароли и ключи!)
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Директории с плагинами, модулями и кэшем
+.terraform/
+.terraform.lock.hcl
+
+# Краш-логи
+crash.log
+crash.*.log
+
+# Локальные файлы провайдеров и прочие бэкапы
+.tfstate.backup
+environment
+
+# --- Среда разработки и ОС ---
+# VS Code, PyCharm, JetBrains и т.д.
+.vscode/
+.idea/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+sources:
+  in:
+    type: stdin
+
+sinks:
+  console_out:
+    type: console
+    inputs: ["in"]
+    encoding:
+      codec: json
